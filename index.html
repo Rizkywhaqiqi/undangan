@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undangan Acara</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Undangan Acara</h1>
+    </header>
+    
+    <main>
+        <section class="undangan">
+            <h2>Detail Acara</h2>
+            <p>Selamat datang di undangan acara kami! Berikut adalah detail acara:</p>
+            <ul>
+                <li><strong>Nama Acara:</strong> [Nama Acara]</li>
+                <li><strong>Tanggal:</strong> [Tanggal]</li>
+                <li><strong>Waktu:</strong> [Waktu]</li>
+                <li><strong>Tempat:</strong> [Tempat]</li>
+            </ul>
+            <button id="rsvp-button">RSVP</button>
+        </section>
+
+        <section class="slider">
+            <div class="slider-container">
+                <div class="slider-slide">
+                    <img src="asset/photo/p1.jpeg" alt="Slide 1">
+                </div>
+                <div class="slider-slide">
+                    <img src="asset/photo/p2.jpeg" alt="Slide 2">
+                </div>
+                <div class="slider-slide">
+                    <img src="asset/photo/p3.jpeg" alt="Slide 3">
+                </div>
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Undangan Acara</p>
+    </footer>
+
+    <!-- Modal RSVP -->
+    <div id="rsvp-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>RSVP</h2>
+            <form id="rsvp-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="attending">Akan Hadir:</label>
+                <select id="attending" name="attending" required>
+                    <option value="">Pilih...</option>
+                    <option value="yes">Ya</option>
+                    <option value="no">Tidak</option>
+                </select>
+                
+                <button type="submit">Kirim RSVP</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
